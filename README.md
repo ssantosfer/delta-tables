@@ -144,3 +144,21 @@ D -> Delete
 Tabela df_emp depois do Merge
 ```
 ![image](https://github.com/ssantosfer/delta-tables/assets/105020346/dd863cad-6c45-42e7-9230-cfd6f6be13f6)
+
+```python
+query = spark.sql('''select distinct e.id,
+                       e.firstname,
+                       e.middlename,
+                       e.salary,
+                       d.Department, 
+                       current_timestamp() as TIMESTAMP
+                       from employees e left join departments d 
+                       on e.id = d.id''')
+```
+![image](https://github.com/ssantosfer/delta-tables/assets/105020346/96ec6f09-b030-4e3c-816d-b5e4116a46c8)
+
+
+```shell
+Tabela dimensao depois do Merge
+```
+![image](https://github.com/ssantosfer/delta-tables/assets/105020346/dd42a524-eea8-4b60-b4b5-f8ee4d124452)
