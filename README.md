@@ -114,5 +114,18 @@ upsert_tables(spark, emp_path, emp_path_cdc, dim_path, dep_path)
 
 ## Exemplo de Uso
 
+```shell
+df_emp.show()
+```
+![Imagem_1](https://github.com/ssantosfer/delta-tables/assets/105020346/4bfdcb7f-4e4f-4f77-8aa9-7b9752b5dc70)
+
+```shell
+df_dep.show()
+```
+![image](https://github.com/ssantosfer/delta-tables/assets/105020346/cfbe1540-1832-4417-b1e4-cc0d0e7539b9)
 
 
+```shell
+print('Dimension Table')
+```
+![image](https://github.com/ssantosfer/delta-tables/assets/105020346/95e806d3-e22f-4f00-b038-8fc1a2e4cba5)
