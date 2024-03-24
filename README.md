@@ -129,3 +129,18 @@ df_dep.show()
 print('Dimension Table')
 ```
 ![image](https://github.com/ssantosfer/delta-tables/assets/105020346/95e806d3-e22f-4f00-b038-8fc1a2e4cba5)
+
+
+```shell
+Tabela criada para simular operações de CDC
+U -> update
+I -> insert
+D -> Delete
+
+```
+![image](https://github.com/ssantosfer/delta-tables/assets/105020346/2016d4eb-1024-4145-9dbe-cd7533938083)
+
+```shell
+Tabela df_emp depois do Merge
+```
+![image](https://github.com/ssantosfer/delta-tables/assets/105020346/dd863cad-6c45-42e7-9230-cfd6f6be13f6)
